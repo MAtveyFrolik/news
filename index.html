@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center"> Новости </h1>
+<form method="post">
+      <select name="adress">
+          <option value="Баскетбол"> Баскетбол </option>
+          <option value="BASKETBALL ACADEMY «ФЕНИКС»"> ФЕНИКС </option>
+          <option value="BASKETGREAT"> BASKETGREAT </option>
+          <option value="Clutch Time Academy"> Clutch Time Academy </option>
+      </select>
+      <input type="submit" value="обновить" >
+</form>
+{% for url in urls %}
+    <script async src="https://telegram.org/js/telegram-widget.js?12" data-telegram-post={{url}}data-width="100%"></script>
+{% endfor %}
+</body>
+</html>
